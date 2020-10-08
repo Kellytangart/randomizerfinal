@@ -9,7 +9,7 @@ let cartoons = [{
 }, {
   name:"Family/Friend Life Comparasion",
 }, {
-  name:"Finding a job relating to you ",
+  name:"Finding a job",
 }];
 
 
