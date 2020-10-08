@@ -1,21 +1,15 @@
 let cartoons = [{
-  name:"Post-Graduate",
-  character: " Depression"
+  name:"Post-Graduate Depression",
 }, {
-  name:"Financial ",
-  character: "Hardships"
+  name:"Financial Hardships",
 }, {
-  name:"Loss of ",
-  character:"Motivation"
+  name:"Loss of Motivation",
 }, {
-  name:"Student Loan ",
-  character: "Debt"
+  name:"Student Loan Debt",
 }, {
-  name:"Family/Friend ",
-  character: "Life Comparasion"
+  name:"Family/Friend Life Comparasion",
 }, {
-  name:"Finding a",
-  character: " job relating to you "
+  name:"Finding a job relating to you ",
 }];
 
 
@@ -40,7 +34,6 @@ function setup() {
   //background(200);
   textSize(32);
   textFont('Georgia');
-  fill('yellow');
   textAlign(CENTER);
   textStyle(BOLD);
   imageMode(CENTER);
@@ -74,11 +67,10 @@ function randomizer(){
   if (cartoons[0]) {
   //this displays random name and splices it out of array
   //background(random(200, 255));
-  clear();
+
   randomIndex= int(random(cartoons.length));
-  text(cartoons[randomIndex].name + cartoons[randomIndex]
-    .character, 50, 50);
     image(random(tickets), width/2 , height/2 );
+     text(`${cartoons[randomIndex].name}`, 400,400);
   cartoons.splice(randomIndex, 1);
 //} else {
   //background(random(200, 255));
